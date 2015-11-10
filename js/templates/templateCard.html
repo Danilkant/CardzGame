@@ -1,0 +1,24 @@
+<div class="row" ng-init="result=cd.getSearch('', params.title)">
+	<div class=panel>
+		<strong>{{ result.title }}</strong>
+		<br>
+		<i>{{ result.rarity }}</i>
+		<small>({{ result.faction }})</small>
+		<p>{{ randomQuote(result.quotes) }}</p>
+		<hr>
+		<table>
+			<thead>
+				<tr>
+					<th ng-repeat="(key, value) in result.statistics">{{ key }}</th>
+				</tr>
+			</thead>
+			<tbody>
+			    <tr>
+			      <td ng-repeat="(key, value) in result.statistics">{{ value }}</td>
+			    </tr>
+			 </tbody>
+		</table>
+		<a href="/deck">Back to Deck Building</a>
+	</div>
+	
+</div>

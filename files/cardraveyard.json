@@ -1,0 +1,52 @@
+{
+	"cards": [
+		{
+			"title" :  "Lord of Magic",
+			"rarity" : "Legendary",
+			"statistics" : {
+				"attack" : 999,
+				"health" : 5000,
+				"support": 999,
+				"defense": 999,
+				"sapphires" : 1
+			},
+			"affix" : {},
+			"faction": "Fire Tribe",
+			"quotes": ["Our journey has just begun.", "I am all that is left of my tribe, but I'm not alone."],
+			"description": "Half human, half demon. He is the last surviving member of his Tride, and has been chosen as the champion of Eastern Kingdoms. His magical mastery is un-paralleled. Known as the Dread Lord, amongst many demons.",
+			"author" : "Danilkant"
+		},
+		{
+			"title" :  "Marcus, The Agile",
+			"rarity" : "Legendary",
+			"statistics" : {
+				"attack" : 999,
+				"health" : 5000,
+				"support": 999,
+				"defense": 999,
+				"sapphires" : 1
+			},
+			"affix" : {},
+			"faction": "Darker Inquisition",
+			"quotes": ["The hunt is on!", "I will eradicate all Darkers."],
+			"description": "Grand Darker-hunter. A representitive of the Darker Council. Well known for his daring battles against the X-Y Darkers and the countless lives he has saved.",
+			"author" : "Danilkant"
+		},
+		{
+			"title" :  "Lucas, The Corrupted",
+			"rarity" : "Legendary",
+			"statistics" : {
+				"attack" : 999,
+				"health" : 5000,
+				"support": 999,
+				"defense": 999,
+				"sapphires" : 1
+			},
+			"affix" : {},
+			"faction": "Northern Kingdoms",
+			"quotes": ["Hmm...", "I will reap your soul!", "Do you sense this presence?"],
+			"description": "Champions of his faction, even his enemies avoid his presence. Rumors say that his touch can kill anyone opposing him.",
+			"author" : "Danilkant"
+		}
+	]
+}
