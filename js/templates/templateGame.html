@@ -1,6 +1,31 @@
-<div class="row" ng-controller="gameGameController">
-        
+<div class="row" ng-init="initializeFields()">
+		
+	<fieldset class="small-12 columns panel">
+	<legend class="info label">Oposing forces</legend>
+		<ul class="small-block-grid-4">
+			<li ng-repeat="a in enemy.field">
+				<fieldset>
+					<legend class="warning label">{{ a.title }}</legend>
+					<ul>
+						<li ng-repeat="(key, value) in a.statistics">{{ key.substring(0,3) }}&rArr; {{ value }}</li>
+					</ul>
+					
+				</fieldset>
+			</li>
+		</ul>
+	</fieldset>
+	<fieldset class="small-12 columns panel">
+	<legend class="info label">Your forces</legend>
+		<ul class="small-block-grid-4">
+			<li ng-repeat="a in friendly.field">
+				<fieldset>
+					<legend class="success label">{{ a.title }}</legend>
+					<ul>
+						<li ng-repeat="(key, value) in a.statistics">{{ key.substring(0,3) }}&rArr; {{ value }}</li>
+					</ul>
 
-        <h1>Enter your API url</h1>
-
-    </div>
+				</fieldset>
+			</li>
+		</ul>
+	</fieldset>
+</div>

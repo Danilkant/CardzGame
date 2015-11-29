@@ -17,7 +17,7 @@
 			"author" : "Danilkant"
 		},
 		{
-			"title" :  "Marcus, The Agile",
+			"title" :  "Marcus of the Wind",
 			"rarity" : "Legendary",
 			"statistics" : {
 				"attack" : 999,
@@ -46,6 +46,38 @@
 			"faction": "Northern Kingdoms",
 			"quotes": ["Hmm...", "I will reap your soul!", "Do you sense this presence?"],
 			"description": "Champions of his faction, even his enemies avoid his presence. Rumors say that his touch can kill anyone opposing him.",
+			"author" : "Danilkant"
+		},
+		{
+			"title" :  "Magus Slayer David",
+			"rarity" : "Legendary",
+			"statistics" : {
+				"attack" : 999,
+				"health" : 5000,
+				"support": 999,
+				"defense": 999,
+				"sapphires" : 1
+			},
+			"affix" : {},
+			"faction": "Southern Kingdoms",
+			"quotes": ["Where's my golden hoe at...", "Now you see me... and now you die.", "Don't get arrogant kid..."],
+			"description": "Known for his great acomplishments in dealing with \"annoying\" sorcery.",
+			"author" : "Danilkant"
+		},
+		{
+			"title" :  "Grand Arcane-Master Luna",
+			"rarity" : "Legendary",
+			"statistics" : {
+				"attack" : 999,
+				"health" : 5000,
+				"support": 999,
+				"defense": 999,
+				"sapphires" : 1
+			},
+			"affix" : {},
+			"faction": "Fire Tribe",
+			"quotes": ["I hope it's worth my time.", "I choose my own destiny."],
+			"description": "Joined the Fire Tribe after her dis-agreements with the council of magic.",
 			"author" : "Danilkant"
 		}
 	]

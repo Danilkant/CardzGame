@@ -1,28 +1,28 @@
-<div class="row">
-	<b>This is more beta than beta - any letter works, better select and press back space</b>
+<div class="row" ng-init="result=cd.getSearch('', '')">
+	<b>This is more beta than beta - any letter works, click on the name to add</b>
 	<div class="small-9 columns panel">
 	<input type="text" id="searchbox" ng-keyup="event=$event;result=cd.getSearch('', searchAssist(event))"></input>
-		<ul class="small-block-grid-3">
-			<li ng-repeat="a in result">
-				<b>{{ a.title }}</b>
+		<ul class="small-block-grid-3 animate-container">
+			<li class="animate-repeat" ng-repeat="a in result">
+				<b><a ng-click="pd.alterDeck('add', a.title)">{{ a.title }}</a></b>
 				<br>
 				<i>{{ a.rarity }}</i>
 				<small>({{ a.faction }})</small>
 				<p>{{ randomQuote(a.quotes) }}</p>
 				<hr>
 				<a href="/deck/{{ a.title }}">Statistics</a>
-				<br>
-				<a ng-click="selected.push(a)">Add card</a>
 			</li>
 		</ul>
 	</div>
 	<div class="small-3 columns panel">
-	<b>Selected cards:</b>
-	<ul class="small-block-grid-1">
-			<li ng-repeat="a in selected">
-				<small><b>{{ a.title }}</b></small>
-				<small>({{ a.rarity }})</small>
-			</li>
+		<b>Selected cards:</b>
+		<ul class="small-block-grid-1 animate-container">
+				<li class="animate-repeat" ng-repeat="a in pd.pd">
+					<small><b><a ng-click="pd.alterDeck('delete', a.title)">{{ a.title }}</a></b></small>
+					<small>({{ a.rarity }})</small>
+				</li>
 		</ul>
+		<hr>
+		<a href="/">Go Back</a>
 	</div>
 </div>
